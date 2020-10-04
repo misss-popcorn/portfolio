@@ -8,6 +8,7 @@ class NavBar extends React.PureComponent {
     this.state = {
       socialMediaHandles:[]
     };
+    console.log("ok");
   }
 
   componentDidMount ()  {

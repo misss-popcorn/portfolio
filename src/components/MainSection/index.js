@@ -12,9 +12,7 @@ return (<section className="section bg-secondary">
       <div className="row justify-content-center">
         <div className="col-lg-3 order-lg-2">
           <div className="card-profile-image">
-            <button>
               <img  alt="DP" src="../assets/img/DP.jpg" className="rounded-circle"/>
-            </button>
           </div>
         </div>
         <div className="col-lg-4 order-lg-3 text-lg-right align-self-lg-center">

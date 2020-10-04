@@ -15,10 +15,11 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
+    "lint": "eslint src/**/*.js src/**/*.jsx",
     "validate": "npm-run-all --parallel test lint",
     "precommit": "npm run validate",
-    "prepush": "npm run validate",
-    "lint": "eslint src/**/*.js src/**/*.jsx"
+    "prepush": "npm run validate"
+    
   },
   "eslintConfig": {
     "extends": "react-app"

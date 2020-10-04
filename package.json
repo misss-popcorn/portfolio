@@ -1,7 +1,14 @@
 {
   "name": "portfolio",
   "version": "0.1.0",
+  "author": "Urvashi Soni",
   "private": false,
+  "description": "Personal portfolio",
+  "keywords": ["js", "javascript", "html", "react", "react.js"],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/usoni11/portfolio.git"
+  },
   "bugs": {
     "url": "https://github.com/usoni11/portfolio/issues"
   },

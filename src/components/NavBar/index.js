@@ -5,9 +5,9 @@ import {getSocialMediaHandles} from "../../data";
 class NavBar extends React.PureComponent {
   constructor(props) {
     super(props);
-    this.state = {
-      socialMediaHandles:[]
-    };
+      this.state = {
+        socialMediaHandles:[]
+      };
   }
 
   componentDidMount ()  {

@@ -1,7 +1,7 @@
 import React from "react";
 
 const Footer = () => {
-    return (<footer className="footer">
+  return (<footer className="footer">
     <div className="container">
       <div className="row row-grid align-items-center mb-5">
         
@@ -10,6 +10,6 @@ const Footer = () => {
       <hr></hr>
       
     </div>
-  </footer>)
-}
+  </footer>);
+};
 export default Footer;

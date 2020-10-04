@@ -5,13 +5,13 @@ import MainSection from "./../MainSection";
 import Footer from "./../Footer";
 
 const Container = () => {
-    return (<div className="wrapper">
+  return (<div className="wrapper">
     
     <BackGround></BackGround>
     <MainSection></MainSection>
     <Footer></Footer>
     
-  </div>)
-}
+  </div>);
+};
 
 export default Container;

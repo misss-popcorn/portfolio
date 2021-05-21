@@ -276,7 +276,7 @@ const BackGround = () => {
     const ctx = canvasRef.current.getContext("2d");
     ctx.shadowBlur = 10;
 
-    if (res == "down") {
+    if (res === "down") {
       strokeRef.current.prevX = strokeRef.current.currX;
       strokeRef.current.prevY = strokeRef.current.currY;
       strokeRef.current.currX = e.clientX - canvasRef.current.offsetLeft;
@@ -294,13 +294,13 @@ const BackGround = () => {
       }
     }
 
-    if (res == "up" || res == "out") {
+    if (res === "up" || res === "out") {
       strokeRef.current.flag = false;
       strokeRef.current.strokeColor = getRandomColor();
       // clearStroke();
     }
 
-    if (res == "move") {
+    if (res === "move") {
       if (strokeRef.current.flag) {
         strokeRef.current.prevX = strokeRef.current.currX;
         strokeRef.current.prevY = strokeRef.current.currY;
@@ -330,23 +330,18 @@ const BackGround = () => {
   }
 
   React.useEffect(() => {
-    canvasRef.current.addEventListener("mousemove", (e) => findxy("move", e));
-    canvasRef.current.addEventListener("mousedown", (e) => findxy("down", e));
-    canvasRef.current.addEventListener("mouseup", (e) => findxy("up", e));
-    canvasRef.current.addEventListener("mouseout", (e) => findxy("out", e));
+    const canvas = canvasRef.current;
+    canvas.addEventListener("mousemove", (e) => findxy("move", e));
+    canvas.addEventListener("mousedown", (e) => findxy("down", e));
+    canvas.addEventListener("mouseup", (e) => findxy("up", e));
+    canvas.addEventListener("mouseout", (e) => findxy("out", e));
     // drawText();
     glitchText();
     return () => {
-      canvasRef.current.removeEventListener("mousemove", (e) =>
-        findxy("move", e)
-      );
-      canvasRef.current.removeEventListener("mousedown", (e) =>
-        findxy("down", e)
-      );
-      canvasRef.current.removeEventListener("mouseup", (e) => findxy("up", e));
-      canvasRef.current.removeEventListener("mouseout", (e) =>
-        findxy("out", e)
-      );
+      canvas.removeEventListener("mousemove", (e) => findxy("move", e));
+      canvas.removeEventListener("mousedown", (e) => findxy("down", e));
+      canvas.removeEventListener("mouseup", (e) => findxy("up", e));
+      canvas.removeEventListener("mouseout", (e) => findxy("out", e));
     };
   });
 

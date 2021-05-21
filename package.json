@@ -13,9 +13,14 @@
     "type": "git",
     "url": "git+https://github.com/usoni11/portfolio.git"
   },
-  "keywords": ["javascript", "html", "react", "react.js"],
+  "keywords": [
+    "javascript",
+    "html",
+    "react",
+    "react.js"
+  ],
   "author": "Urvashi Soni",
-  "license":"MIT",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/usoni11/portfolio/issues"
   },
@@ -25,6 +30,7 @@
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
     "react": "^16.13.1",
+    "react-canvas-draw": "^1.1.1",
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.3"
   },
